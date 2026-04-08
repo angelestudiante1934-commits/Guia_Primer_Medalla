@@ -1,10 +1,12 @@
 # Mi Proyecto Web
 ## Descripción
-Este proyecto es una página web creada con HTML.
+PAGINA SOBRE UNA GUIA DE VIDEOJUEGO EN DONDE TE MENCIONA Y MUESTRA TIPS  PARA COMPLETAR RAPIDO UNA MISION, DANDO LA INFORMACION DEL USUARIO Y SUS COMENTARIOS SOBRE LA GUIA
 ## Contenido
 - Página principal
 - Imágenes
-- Video
-- Formulario
+- Musica
+- Links internos
+- Formulario del usuario del jugador
+- Video demostrativo
 ## Autor
-Tu nombre
+Angel Jose Gomez
