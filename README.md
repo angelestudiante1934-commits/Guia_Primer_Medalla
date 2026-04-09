@@ -5,7 +5,9 @@ PAGINA SOBRE UNA GUIA DE VIDEOJUEGO EN DONDE TE MENCIONA Y MUESTRA TIPS  PARA CO
 - Página principal
 - Imágenes
 - Musica
+- Tabla
 - Links internos
+- Links externos
 - Formulario del usuario del jugador
 - Video demostrativo
 ## Autor
