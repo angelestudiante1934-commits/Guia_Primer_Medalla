@@ -1,0 +1,45 @@
+@font-face {
+    font-family:"press";
+    src: url(Fonts/Press_Start_2P/PressStart2P-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:"jersey";
+    src: url(Fonts/Jersey_10_Charted/Jersey10Charted-Regular.ttf) format("truetype");
+}
+body{
+    background-color: black;
+}
+.titulo{
+    justify-content: center;
+    display: flex;
+    font-family:"jersey";
+    font-size: 100px;
+    background-color: red; 
+    color: black;
+    padding: 10px;
+}
+.navegador{
+    display: flex;
+    justify-content: center;
+    font-family: "press";
+    font-size: 20px;
+    background-color: white;
+    color: red;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px grey;
+    line-height: 150%;
+}
+.navegador a{
+    text-decoration: none;
+}
+.box-navegador{
+    display: flex;
+    background-color: red;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 15% ;
+    margin-right: 15% ;
+    border-radius: 40px;
+}
