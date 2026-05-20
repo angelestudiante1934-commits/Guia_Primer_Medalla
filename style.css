@@ -6,15 +6,20 @@
     font-family:"jersey";
     src: url(Fonts/Jersey_10_Charted/Jersey10Charted-Regular.ttf) format("truetype");
 }
+:root
+{
+    --l-cajas: white;
+    --c-cajas: black;
+}
 body 
 {
     background-color: lightgray;
     font-family: "press";
+    text-align: center;
 }
 body p{
-    background-color: black;
-    color: white;
-    text-align: center;
+    background-color: var(--c-cajas);
+    color: var(--l-cajas);
     margin: 10px;
     padding: 20px;
 }
@@ -58,4 +63,21 @@ body p{
     margin-left: 15% ;
     margin-right: 15% ;
     border-radius: 40px;
+}
+.multimedia
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tabla
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+.bordes
+{
+    
 }
