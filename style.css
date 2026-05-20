@@ -13,7 +13,7 @@
 }
 body 
 {
-    background-color: lightgray;
+    background-color: rgba(85, 75, 75, 0.889);
     font-family: "press";
     text-align: center;
 }
@@ -79,5 +79,29 @@ body p{
 }
 .bordes
 {
-    
+    border: 5px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.asides{
+    display: block;
+    width: 225px;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.intro
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.intro iframe
+{
+    margin-top: 10px;
+}
+.intro img
+{
+    width: 25%;
 }
