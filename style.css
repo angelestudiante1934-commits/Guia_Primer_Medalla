@@ -6,8 +6,17 @@
     font-family:"jersey";
     src: url(Fonts/Jersey_10_Charted/Jersey10Charted-Regular.ttf) format("truetype");
 }
-body{
+body 
+{
+    background-color: lightgray;
+    font-family: "press";
+}
+body p{
     background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
 }
 .titulo{
     justify-content: center;
@@ -33,6 +42,13 @@ body{
 }
 .navegador a{
     text-decoration: none;
+    color: black;
+}
+.navegador a:hover
+{
+    background-color: black;
+    color: white;
+    padding: 5px;
 }
 .box-navegador{
     display: flex;
