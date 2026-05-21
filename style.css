@@ -8,6 +8,17 @@
     font-family:"jersey";
     src: url(Fonts/Jersey_10_Charted/Jersey10Charted-Regular.ttf) format("truetype");
 }
+@keyframes latido
+{
+   from
+   {
+        transform: scale(1);
+    }
+    to
+    {
+        transform: scale(1.05);
+    }
+}
 :root
 {
     --l-cajas: white;
@@ -77,6 +88,10 @@ body p
 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.audio 
+{
+    animation: latido 2s infinite ease-in-out;
 }
 .tabla
 {
