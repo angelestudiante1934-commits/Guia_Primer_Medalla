@@ -36,8 +36,7 @@
     .navegador
     {
         font-size: 15px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 0 10% 0  10%;
     }
     iframe
     {
@@ -115,6 +114,7 @@
 {
     --l-cajas: white;
     --c-cajas: black;
+    --l-fcajas:black;
 }
 /*Manejo del diseño del body*/
 body 
@@ -139,7 +139,7 @@ body p
     font-family:"jersey";
     font-size: 100px;
     background-color: red; 
-    color: black;
+    color: var(--l-fcajas);
     padding: 10px;
 }
 /*Diseño del bloque del navegador*/
@@ -149,10 +149,9 @@ body p
     justify-content: center;
     font-family: "press";
     font-size: 20px;
-    background-color: white;
+    background-color: var(--l-cajas);
     color: red;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 0 25% 0 25%;
     border-radius: 25px;
     box-shadow: 10px 10px 0px grey;
     line-height: 150%;
@@ -163,13 +162,13 @@ body p
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: var(--l-fcajas);
 }
 /*Efecto hover de los enlaces dentro del navegador*/
 .navegador a:hover
 {
-    background-color: black;
-    color: white;
+    background-color: var(--c-cajas);
+    color: var(--l-cajas) ;
     padding: 5px;
 }
 /*Diseño del bloque de los enlaces*/
@@ -177,17 +176,14 @@ body p
 {
     display: flex;
     background-color: red;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 15% ;
-    margin-right: 15% ;
+    padding: 40px 0 40px;
+    margin: 0 15% 0 15%;
     border-radius: 40px;
 }
 /*Tamaño de los archivos multimedia (audio,iframes,img)*/
 .multimedia
 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px;
 }
 /*Ingreso de animacion en el audio*/
 .audio 
@@ -199,8 +195,7 @@ body p
 {
     justify-content: center;
     text-align: center;
-    margin-left: 23%;
-    margin-right: 23%;
+    margin: 0 23% 0 23%;
     transition: background-color 0.5s ease-in-out;
 }
 /*Efecto hover de la tabla*/
@@ -212,8 +207,7 @@ body p
 .bordes
 {
     border: 5px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px;
     border-radius: 10px;
 }
 /*Diseño del aside*/
