@@ -1,13 +1,16 @@
+/*Fuente exportada para el titulo*/
 @font-face 
 {
     font-family:"press";
     src: url(Fonts/Press_Start_2P/PressStart2P-Regular.ttf) format("truetype");
 }
+/*Fuente exportada para el cuerpo*/
 @font-face 
 {
     font-family:"jersey";
     src: url(Fonts/Jersey_10_Charted/Jersey10Charted-Regular.ttf) format("truetype");
 }
+/*Animacion*/
 @keyframes latido
 {
    from
@@ -19,6 +22,7 @@
         transform: scale(1.05);
     }
 }
+/*Pasaje a dispositivos tablets*/
 @media (max-width: 768px)
 {
     .intro
@@ -41,6 +45,7 @@
         height: 300px;
     }
 }
+/*Pasaje a dispositivos moviles*/
 @media (max-width: 480px){
     .titulo
     {
@@ -105,17 +110,20 @@
         font-size: 5px;
     }
 }
+/*Roots de colores*/
 :root
 {
     --l-cajas: white;
     --c-cajas: black;
 }
+/*Manejo del diseño del body*/
 body 
 {
     background-color: rgba(85, 75, 75, 0.889);
     font-family: "press";
     text-align: center;
 }
+/*Manejo del diseño del texto en el body*/
 body p
 {
     background-color: var(--c-cajas);
@@ -123,6 +131,7 @@ body p
     margin: 10px;
     padding: 20px;
 }
+/*Diseño del titulo*/
 .titulo
 {
     justify-content: center;
@@ -133,6 +142,7 @@ body p
     color: black;
     padding: 10px;
 }
+/*Diseño del bloque del navegador*/
 .navegador
 {
     display: flex;
@@ -147,6 +157,7 @@ body p
     box-shadow: 10px 10px 0px grey;
     line-height: 150%;
 }
+/*Diseño de los enlaces dentro del navegador*/
 .navegador a
 {
     display: flex;
@@ -154,12 +165,14 @@ body p
     text-decoration: none;
     color: black;
 }
+/*Efecto hover de los enlaces dentro del navegador*/
 .navegador a:hover
 {
     background-color: black;
     color: white;
     padding: 5px;
 }
+/*Diseño del bloque de los enlaces*/
 .box-navegador
 {
     display: flex;
@@ -170,15 +183,18 @@ body p
     margin-right: 15% ;
     border-radius: 40px;
 }
+/*Tamaño de los archivos multimedia (audio,iframes,img)*/
 .multimedia
 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/*Ingreso de animacion en el audio*/
 .audio 
 {
     animation: latido 2s infinite ease-in-out;
 }
+/*Diseño de la tabla*/
 .tabla
 {
     justify-content: center;
@@ -187,10 +203,12 @@ body p
     margin-right: 23%;
     transition: background-color 0.5s ease-in-out;
 }
+/*Efecto hover de la tabla*/
 .tabla:hover
 {
     background-color: rgb(45, 45, 45);
 }
+/*Implementacion de bordes y su radio*/
 .bordes
 {
     border: 5px solid black;
@@ -198,6 +216,7 @@ body p
     margin-bottom: 10px;
     border-radius: 10px;
 }
+/*Diseño del aside*/
 .asides
 {
     display: block;
@@ -207,28 +226,33 @@ body p
     padding: 20px;
     border-radius: 10px;
 }
+/*Grid que contiene datos introductorios o simple contenido de la pagina*/
 .intro
 {
     display: grid;
     grid-template-columns: 250px 1fr 300px;
     gap: 30px;
 }
+/*Diseño del iframe dentro del grid*/
 .intro iframe
 {
     margin-top: 10px;
     width: 100%;
     height: 400px;
 }
+/*Diseño del img dentro del grid*/
 .intro img
 {
     width: 100%;
 }
+/*Diseño del bloque del footer*/
 .box-footer
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/*Diseño del boton dentro del bloque del footer*/
 .box-footer button 
 {
     background: none;
@@ -237,10 +261,12 @@ body p
     cursor: pointer;
     transition: transform 0.2s ease;
 }
+/*Efecto hover del boton dentro del bloque del footer*/
 .box-footer button:hover
 {
     transform: scale(1.3);
 }
+/*Efecto cuando el boton del bloque del footer es presionado*/
 .box-footer button:active
 {
     transform: scale(0.85);
