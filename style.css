@@ -115,6 +115,7 @@
     --l-cajas: white;
     --c-cajas: black;
     --l-fcajas:black;
+    --c-titulo:rgb(18, 10, 10);
 }
 /*Manejo del diseño del body*/
 body 
@@ -139,7 +140,7 @@ body p
     font-family:"jersey";
     font-size: 100px;
     background-color: red; 
-    color: var(--l-fcajas);
+    color: var(--c-titulo);
     padding: 10px;
 }
 /*Diseño del bloque del navegador*/
