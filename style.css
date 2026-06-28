@@ -146,6 +146,7 @@ body p
 /*Diseño del bloque del navegador*/
 .navegador
 {
+    list-style: none;
     display: flex;
     justify-content: center;
     font-family: "press";
