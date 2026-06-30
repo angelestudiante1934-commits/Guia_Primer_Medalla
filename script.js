@@ -23,6 +23,17 @@ const ABosq = document.getElementById("ABosq")
 const ACPla = document.getElementById("ACPla")
 const AFin = document.getElementById("AFin")
 
+const Resultado = document.getElementById("Resultado")
+const BCon = document.getElementById("Boton_Consulta")
+
+let consejos = [
+    "Brock es el lider del primer gimansio y su especialidad son los tipo Roca." ,
+    "Planta es muy efectivo contra Roca,Tierra y Agua." ,
+    "Bulbasaur es tipo Planta y Veneno." ,
+    "Tu rival siempre elegirá el inicial perfecto contra el tuyo." ,
+    "Algunas pokeball son mas efectivas que otras."
+] 
+
 ACasa.addEventListener("click", () => {
     mostrarPaso()
 })
@@ -244,4 +255,28 @@ function mostrarPaso(){
             break;
     }
 
+}
+
+BCon.addEventListener("click", () => {
+    mostrarConsulta()
+})
+BCon.addEventListener("mouseover", () => {
+    BCon.style.cursor = "pointer"
+    BCon.style.textDecoration = "underline"
+})
+BCon.addEventListener("mouseout", () => {
+    BCon.style.cursor = "default"
+    BCon.style.textDecoration = "none"
+})
+
+function mostrarConsulta() {
+    let rand
+    rand = random()
+    Resultado.textContent = consejos[rand]
+}
+
+function random () {
+    let azar
+    azar = Math.floor(Math.random() * 5) // genera un valor aleatorio entre 0 y 4, con el Math.random se genera un numero entre 0 y 0.99, con el * 5 pasa a ser entre 0 y 4.9, con el floor elimina los decimales y lo dejaria entre 0 y 4
+    return azar
 }
