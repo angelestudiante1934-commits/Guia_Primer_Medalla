@@ -285,3 +285,64 @@ legend
     font-size: 35px;
     line-height: 75px;
 }
+#Casa
+{
+    display: none;
+}
+#Pueblo_Paleta
+{
+    display: none;
+}
+#Laboratorio
+{
+    display: none;
+}
+#Ruta_1
+{
+    display: none;
+}
+#Ciudad_Verde
+{
+    display: none;
+}
+#Ruta_2
+{
+    display: none;
+}
+#Bosque_Verde
+{
+    display: none;
+}
+#Ciudad_Plateada
+{
+    display: none;
+}
+#Video
+{
+    display: none;
+}
+#Inicio_Guia
+{
+    margin: 50px;
+    padding: 20px;
+    font-size: 50px;
+    font-family: "press";
+}
+#Anterior
+{
+    background: none;
+    border: none;
+    font-size: 50px;
+    font-family: "press";
+    margin-right: 500px;
+    display: none;
+}
+#Siguiente
+{
+    background: none;
+    border: none;
+    font-size: 50px;
+    font-family: "press";
+    margin-left: 500px;
+    display: none;
+}
