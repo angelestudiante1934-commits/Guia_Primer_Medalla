@@ -26,6 +26,12 @@ const AFin = document.getElementById("AFin")
 const Resultado = document.getElementById("Resultado")
 const BCon = document.getElementById("Boton_Consulta")
 
+const Formulario = document.getElementById("Formulario");
+const Usuario = document.getElementById("Usuario");
+const Contrasena = document.getElementById("Contrasena");
+const Correo = document.getElementById("Correo");
+const Comentario = document.getElementById("Comentario");
+
 let consejos = [
     "Brock es el lider del primer gimansio y su especialidad son los tipo Roca." ,
     "Planta es muy efectivo contra Roca,Tierra y Agua." ,
@@ -279,4 +285,63 @@ function random () {
     let azar
     azar = Math.floor(Math.random() * 5) // genera un valor aleatorio entre 0 y 4, con el Math.random se genera un numero entre 0 y 0.99, con el * 5 pasa a ser entre 0 y 4.9, con el floor elimina los decimales y lo dejaria entre 0 y 4
     return azar
+}
+
+Formulario.addEventListener("submit", function(event){
+    try{
+        let vectorMayuscula = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","X","Y","W","Z"]
+        let vectorNumero = ["1","2","3","4","5","6","7","8","9","0"]
+        let vectorEspeciales = ["[","!","@","#","$","%","^","&","*","(",")",",",".","?",":","{","}","|","<",">","_","\\","-","+","=","]"]
+        let correosvalidos = ["@gmail.com","@hotmail.com","@outlook.com","@yahoo.com"]
+        let pass = Contrasena.value
+        let mail = Correo.value.trim()
+        if(Usuario.value.trim().length < 1 || Usuario.value.trim().length > 15){
+            throw "El usuario debe tener entre 1 y 15 caracteres."
+        }
+        if(pass.length < 5 || pass.length > 10) {
+            throw "La contraseña debe tener entre 5 y 10 caracteres."
+        }
+        if(!buscarCaracter(pass, vectorMayuscula)){
+            throw "La contraseña debe contener al menos una letra mayúscula."
+        }
+        if(!buscarCaracter(pass, vectorNumero)){
+            throw "La contraseña debe contener al menos un número."
+        }
+        if(!buscarCaracter(pass, vectorEspeciales)){
+            throw "La contraseña debe contener al menos un carácter especial."
+        }
+        if(!validarCorreo(mail, correosvalidos)){
+            throw "Ingrese un correo electrónico válido."
+        }
+        if(Comentario.value.trim() == "") {
+            throw "Debe escribir un comentario."
+        }
+        alert("Formulario enviado correctamente.")
+    }catch(e) {
+        alert(e);
+    }
+})
+function buscarCaracter(aux, vector){
+    let i = 0
+    do{
+        let j = 0
+        do{
+            if(aux[i] == vector[j]){
+                return true
+            }
+            j++
+        }while(j < vector.length)
+        i++
+    }while(i < aux.length)
+    return false
+}
+function validarCorreo(correo, correosvalidos){
+    let i = 0
+    do{
+        if(correo.endsWith(correosvalidos[i])){
+            return true
+        }
+        i++
+    }while(i < correosvalidos.length)
+    return false
 }
