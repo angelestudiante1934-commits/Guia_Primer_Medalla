@@ -1,4 +1,4 @@
-let paso = 0;
+let paso = 0
 
 const Casa = document.getElementById("Casa")
 const PuebP = document.getElementById("Pueblo_Paleta")
@@ -13,7 +13,59 @@ const Izq = document.getElementById("Anterior")
 const Der = document.getElementById("Siguiente")
 const Ini = document.getElementById("Inicio_Guia")
 
+const ACasa = document.getElementById("ACasa")
+const APuebP = document.getElementById("APuebP")
+const ALab = document.getElementById("ALab")
+const AR1 = document.getElementById("AR1")
+const ACVer = document.getElementById("ACVer")
+const AR2 = document.getElementById("AR2")
+const ABosq = document.getElementById("ABosq")
+const ACPla = document.getElementById("ACPla")
+const AFin = document.getElementById("AFin")
 
+ACasa.addEventListener("click", () => {
+    mostrarPaso()
+})
+
+APuebP.addEventListener("click", () => {
+    paso = 1
+    mostrarPaso()
+})
+
+ALab.addEventListener("click", () => {
+    paso = 2
+    mostrarPaso()
+})
+
+AR1.addEventListener("click", () => {
+    paso = 3
+    mostrarPaso()
+})
+
+ACVer.addEventListener("click", () => {
+    paso = 4
+    mostrarPaso()
+})
+
+AR2.addEventListener("click", () => {
+    paso = 5
+    mostrarPaso()
+})
+
+ABosq.addEventListener("click", () => {
+    paso = 6
+    mostrarPaso()
+})
+
+ACPla.addEventListener("click", () => {
+    paso = 7
+    mostrarPaso()
+})
+
+AFin.addEventListener("click", () => {
+    paso = 8
+    mostrarPaso()
+})
 
 Ini.addEventListener("mouseover", () => {
     Ini.style.cursor = "pointer"
